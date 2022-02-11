@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1f5fe"
+    android:orientation="vertical"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    tools:context=".monitorActivity">
+
+
+    <Button
+        android:id="@+id/enblSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+
+        android:text="Enable Sensors" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginRight="30dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textbg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/BP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Blood Pressure"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/bpValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BP"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="--"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textbg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+            <TextView
+                android:id="@+id/HR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Heart Rate (beats/min)"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/hrValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/HR"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="--"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textbg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Temperature (Fahrenheit)"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/tempValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="--"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/textbg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
+            app:layout_constraintVertical_bias="0.072">
+
+            <TextView
+                android:id="@+id/bo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Blood oxygen (mm Hg)"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/bo2Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bo2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="--"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/exitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Disable Sensors" />
+
+
+</LinearLayout>
+

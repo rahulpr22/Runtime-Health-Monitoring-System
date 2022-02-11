@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Report">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="428dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#feeae1">
+
+
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="75dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="89dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="122dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginRight="46dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/verify" />
+
+        <Button
+            android:id="@+id/gbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="view Guards" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="224dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="122dp"
+            android:layout_toRightOf="@+id/icon"
+            android:hint="Result"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hrtv"
+            android:layout_width="224dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/result"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/icon"
+            android:hint="Hr"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/temptv"
+            android:layout_width="224dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/hrtv"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/icon"
+            android:hint="temp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/spo2tv"
+            android:layout_width="224dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/temptv"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/icon"
+            android:hint="spo2"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bptv"
+            android:layout_width="224dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/spo2tv"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/icon"
+            android:hint="bp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

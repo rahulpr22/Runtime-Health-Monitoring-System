@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#e1f5fe"
+    android:padding="10px">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="14pt"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Request for Monitoring..."
+        android:fontFamily="@font/amaranth"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="8pt"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Please Input the following details to place your request"
+        android:fontFamily="@font/amaranth"
+        android:textColor="@color/black"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/textbg"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="40dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true">
+        <EditText
+            android:id="@+id/start"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Start Time">
+        </EditText>
+        <EditText
+            android:id="@+id/end"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="End Time">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/startp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Pick">
+        </Button>
+        <Button
+            android:id="@+id/endp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="Pick">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place request"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/placerequest"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/closePopupBtn"/>
+
+</LinearLayout>

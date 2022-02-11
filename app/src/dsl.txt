@@ -1,0 +1,11 @@
+%Tokens LEFTPAR COMMA RIGHTPAR INTNUM HR BP TEMP TIMEGAP SAFE UNSAFE ASSIGN GT LT GE LE  HIGH LOW NORMAL {epsilon} SLASH
+%Non-terminals <start> <event> <condition> <relop> <result> <temp> <interval>
+%Start <start>
+%Rules
+<start> : LEFTPAR <event> COMMA <condition> RIGHTPAR <interval> <Start> | ASSIGN <result> | {epsilon}
+<interval> : TIMEGAP <relop> INTNUM <interval> | {epsilon}
+<event> : HR | BP | TEMP
+<condition> : HIGH <temp> | LOW <temp> | NORMAL <temp>
+<temp> : SLASH <condition> | {epsilon}
+<relop> : LT | GT | LE | GE
+<result> : SAFE | UNSAFE

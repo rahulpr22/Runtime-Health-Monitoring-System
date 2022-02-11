@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BTP-App</string>
+    <string name="exit_amp_get_report"><![CDATA[exit & get report]]></string>
+    <string name="real_time_health_monitoring_btp">Real time Health Monitoring (BTP)</string>
+    <string name="patient_age">Patient Age</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="hello_there_n_welcome_back">Hello there,\n Welcome Back !!</string>
+    <string name="login">LOGIn</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="new_user_signup">new User? SignUp</string>
+    <string name="password">Password</string>
+    <string name="sign_in_to_continue">Sign in to Continue..</string>
+    <string name="forgotpwd">Forgot password?</string>
+    <string name="reports">REPORTS</string>
+</resources>

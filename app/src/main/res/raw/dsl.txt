@@ -1,0 +1,16 @@
+%Tokens BEGIN ASSIGN END SEMICOLON IF THEN ELSE ENDIF LEFTPAR COMMA RIGHTPAR INTNUM HR BP TEMP TIME GT LT GE LE EE HIGH LOW NORMAL {epsilon} SLASH SAFE UNSAFE RETURN
+%Non-terminals <dsl> <start> <event> <statement> <condition> <relop> <result> <temp> <interval> <MATCHED> <UNMATCHED> <unmatchtemp>
+%Start <start>
+%Rules
+<start> : BEGIN ASSIGN <dsl> END SEMICOLON
+<dsl> : <MATCHED> | <UNMATCHED>
+<MATCHED> : IF <statement> THEN <MATCHED> ELSE <MATCHED> ENDIF SEMICOLON | RETURN <result> SEMICOLON
+<UNMATCHED> : IF <statement> THEN <unmatchtemp> | RETURN <result> SEMICOLON
+<unmatchtemp> : <dsl> ENDIF SEMICOLON | <MATCHED> ELSE <UNMATCHED> ENDIF SEMICOLON
+<statement> : LEFTPAR <event> COMMA <condition> COMMA <interval> RIGHTPAR
+<interval> : TIME <relop> INTNUM <interval> | {epsilon}
+<event> : HR | BP | TEMP
+<condition> : HIGH <temp> | LOW <temp> | NORMAL <temp>
+<temp> : SLASH <condition> | {epsilon}
+<relop> : LT | GT | LE | GE | EE
+<result> : SAFE | UNSAFE

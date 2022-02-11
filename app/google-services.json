@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "982180493001",
+    "project_id": "btp-app-80033",
+    "storage_bucket": "btp-app-80033.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982180493001:android:89080304eae8aae8627f18",
+        "android_client_info": {
+          "package_name": "com.example.btp_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982180493001-0ci77qpsrea0l1tqv2pafbpt700rjg3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj5Bz-B-PFiRb9yrNDUfV3HA0hmGwbO8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982180493001-0ci77qpsrea0l1tqv2pafbpt700rjg3e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
