@@ -73,21 +73,21 @@ The Algorithm for constructing a TA for a given timed policy expressed using DSL
  
  The output of this algorithm when executed for policy-1 is as follows<br />
  
-Accepting Locations: [ Location-3, Location-2 ]
-NonAccepting Locations : [ Location-4 ]
-Location-id: Location-0
-isAccepting: false
-Transitions: [
-]
+Accepting Locations: [ Location-3, Location-2 ]__
+NonAccepting Locations : [ Location-4 ]__
+Location-id: Location-0__
+isAccepting: false__
+Transitions: [__
+]__
+__
 
-
-Location-id: Location-1
-isAccepting: false
-Transitions: [
-{
-Source Location: Location-0
-Destination Location: Location-1
-Transition: ( hr = low , time = 0 )
+Location-id: Location-1__
+isAccepting: false__
+Transitions: [__
+{__
+Source Location: Location-0__
+Destination Location: Location-1__
+Transition: ( hr = high , time = 0 )__
 },
 
 ]
@@ -99,7 +99,7 @@ Transitions: [
 {
 Source Location: Location-0
 Destination Location: Location-2
-Transition: !( hr = low , time = 0 )
+Transition: !( hr = high , time = 0 )
 },
 
 {
@@ -117,7 +117,7 @@ Transitions: [
 {
 Source Location: Location-1
 Destination Location: Location-3
-Transition: ( bp = high , time >= 20 )
+Transition: ( hr = high , time >= 10 )
 },
 
 {
@@ -141,7 +141,7 @@ Transition: All Events
 {
 Source Location: Location-1
 Destination Location: Location-4
-Transition: !( bp = high , time >= 20 )
+Transition: !( hr = high , time >= 10 )
 },
 
 ]
