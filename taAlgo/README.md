@@ -70,3 +70,78 @@ The Algorithm for constructing a TA for a given timed policy expressed using DSL
   ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/11.png)
   
  The resulting state diagram obtained by following this algorithm is the TA corresponding to policy-1.
+ 
+ The output of this algorithm when executed for policy-1 is as follows<br />
+ 
+Accepting Locations: [ Location-3, Location-2 ]
+NonAccepting Locations : [ Location-4 ]
+Location-id: Location-0
+isAccepting: false
+Transitions: [
+]
+
+
+Location-id: Location-1
+isAccepting: false
+Transitions: [
+{
+Source Location: Location-0
+Destination Location: Location-1
+Transition: ( hr = low , time = 0 )
+},
+
+]
+
+
+Location-id: Location-2
+isAccepting: true
+Transitions: [
+{
+Source Location: Location-0
+Destination Location: Location-2
+Transition: !( hr = low , time = 0 )
+},
+
+{
+Source Location: Location-2
+Destination Location: Location-0
+Transition: All Events
+},
+
+]
+
+
+Location-id: Location-3
+isAccepting: true
+Transitions: [
+{
+Source Location: Location-1
+Destination Location: Location-3
+Transition: ( bp = high , time >= 20 )
+},
+
+{
+Source Location: Location-3
+Destination Location: Location-1
+Transition: All Events
+},
+
+]
+
+
+Location-id: Location-4
+isAccepting: false
+Transitions: [
+{
+Source Location: Location-4
+Destination Location: Location-4
+Transition: All Events
+},
+
+{
+Source Location: Location-1
+Destination Location: Location-4
+Transition: !( bp = high , time >= 20 )
+},
+
+]
