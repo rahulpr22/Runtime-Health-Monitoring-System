@@ -34,7 +34,7 @@ public class App {
         Stack<String> stack= new Stack<>();       
         stack.push("Location-"+counter);
         counter++;
-        int x=0;
+        
         ArrayList<String> accepting = new ArrayList<>(); 
         ArrayList<String> nonAccepting = new ArrayList<>(); 
         Stack<String> elseStack = new Stack<>();
@@ -50,15 +50,7 @@ public class App {
                 if(line.toLowerCase().startsWith("if")) 
                 {
                     stack.push(line.toLowerCase());
-                    if(x==0)
-                    {
-                        Transition t1= new Transition();
-                        t1.setDestination(start);
-                        t1.setSource(start);
-                        t1.setTransition("{All Events}/ ( "+ line.toLowerCase().replace("if (", "").split(",")[0]+" )");
-                        start.getTransitions().add(t1);
-                    }
-                    x++;
+                    
                     elseStack.push(line.toLowerCase().replace("if (", "else !("));
                     if(!stateMap.containsKey(line.toLowerCase()))
                     {
