@@ -15,7 +15,7 @@ This directory consists of source code to translate a given policy into its corr
 
 The Algorithm for constructing a TA for a given timed policy expressed using DSL is presented in our paper. We shall discuss the algorithm to generate a TA via an example. Let us consider policy-1 presented in policy-1.txt file.
 
-- 
+
   `BEGIN := 
   IF ( HR = HIGH , TIME = 0 ) THEN 
   IF ( HR = HIGH , TIME >= 10 ) THEN 
