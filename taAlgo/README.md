@@ -6,7 +6,7 @@ This directory consists of source code to translate a given policy into its corr
 
 
 - `src`: the folder to maintain sources
-- `policy.txt` is a sample healthcare policy
+- `policy1.txt` is a sample healthcare policy
 
 > If you want to run and test the Algorithm just run `src/App.java` file.
 
