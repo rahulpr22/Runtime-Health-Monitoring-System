@@ -29,19 +29,44 @@ The Algorithm for constructing a TA for a given timed policy expressed using DSL
  ` END ; `<br />
 
 - Intially a start state q0 is pushed int the stack following line-1 of the algorithm
+
   ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/1.png)
  
-- When an line starting with *if statement* is encountered push that line into stack
+- When a line starting with *if statement* is encountered push that line into stack
+
   ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/2.png)
  
-- When an line starting with *if statement* is encountered push that line into stack
+- When a line starting with *if statement* is encountered push that line into stack
+
   ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/3.png)
  
-- When an line starting with *return safe statement* is encountered mark the state corresponding to the stack top as accepting
+- When a line starting with *return safe statement* is encountered mark the state corresponding to the stack top as accepting
+
   ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/4.png)
  
- - When an line starting with *else statement* is encountered, if the current stack top is a line starting with *if statement* we pop the current stack top and make the next stack top as is parent and then we push the *else statement* into the stack 
+ - When a line starting with *else statement* is encountered, if the current stack top is a line starting with *if statement* we pop the current stack top and make the next stack top as is parent and then we push the *else statement* into the stack 
+ 
   ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/5.png)
 
-- When an line starting with *return unsafe statement* is encountered mark the state corresponding to the stack top as non-accepting and add a self transition for all events
+- When a line starting with *return unsafe statement* is encountered mark the state corresponding to the stack top as non-accepting 
+
   ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/6.png)
+
+- When a line starting with *endif statement* is encountered, we pop the current stack top and make its parent as next stack top. Continue this step until the stack top is start node q0.
+
+  ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/7.png)
+  ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/8.png)
+ 
+- When a line starting with *else statement* is encountered, and the current stack top is not if statement, push the *else statement* in to the stack.
+
+ ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/9.png)
+
+- When a line starting with *return safe statement* is encountered mark the state corresponding to the stack top as accepting
+
+  ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/10.png)
+ 
+ - When a line starting with *endif statement* is encountered, we pop the current stack top and make its parent as next stack top. Continue this step until the stack top is start node q0.
+
+  ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/11.png)
+  
+ The resulting state diagram obtained by following this algorithm is the TA corresponding to policy-1.
