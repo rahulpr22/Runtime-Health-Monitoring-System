@@ -30,3 +30,15 @@ The Algorithm for constructing a TA for a given timed policy expressed using DSL
 
 - Intially a start state q0 is pushed int the stack following line-1 of the algorithm
   ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/1.png)
+ 
+- When an line starting with *if statement* is encountered push that line into stack
+  ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/2.png)
+ 
+- When an line starting with *if statement* is encountered push that line into stack
+  ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/3.png)
+ 
+- When an line starting with *return statement* is encountered mark the state corresponding to the stack top as accepting
+  ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/4.png)
+ 
+ - When an line starting with *else statement* is encountered, if the current stack top is a line starting with *if statement* we pop the current stack top and make the next stack top as is parent. 
+  ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/5.png)
