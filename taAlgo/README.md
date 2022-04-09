@@ -73,75 +73,71 @@ The Algorithm for constructing a TA for a given timed policy expressed using DSL
  
  The output of this algorithm when executed for policy-1 is as follows<br />
  
-Accepting Locations: [ Location-3, Location-2 ]__
-NonAccepting Locations : [ Location-4 ]__
-Location-id: Location-0__
-isAccepting: false__
-Transitions: [__
-]__
-__
+Accepting Locations: [ Location-3, Location-2 ]<br />
+NonAccepting Locations : [ Location-4 ]<br />
+Location-id: Location-0<br />
+isAccepting: false<br />
+Transitions: [<br />
+]<br />
+<br />
 
-Location-id: Location-1__
-isAccepting: false__
-Transitions: [__
-{__
-Source Location: Location-0__
-Destination Location: Location-1__
-Transition: ( hr = high , time = 0 )__
-},
+Location-id: Location-1<br />
+isAccepting: false<br />
+Transitions: [<br />
+{<br />
+Source Location: Location-0<br />
+Destination Location: Location-1<br />
+Transition: ( hr = high , time = 0 )<br />
+},<br />
+]<br />
+<br />
 
-]
+Location-id: Location-2<br />
+isAccepting: true<br />
+Transitions: [<br />
+{<br />
+Source Location: Location-0<br />
+Destination Location: Location-2<br />
+Transition: !( hr = high , time = 0 )<br />
+},<br />
 
+{<br />
+Source Location: Location-2<br />
+Destination Location: Location-0<br />
+Transition: All Events<br />
+},<br />
+]<br />
 
-Location-id: Location-2
-isAccepting: true
-Transitions: [
-{
-Source Location: Location-0
-Destination Location: Location-2
-Transition: !( hr = high , time = 0 )
-},
+<br />
+Location-id: Location-3<br />
+isAccepting: true<br />
+Transitions: [<br />
+{<br />
+Source Location: Location-1<br />
+Destination Location: Location-3<br />
+Transition: ( hr = high , time >= 10 )<br />
+},<br />
+<br />
+{<br />
+Source Location: Location-3<br />
+Destination Location: Location-1<br />
+Transition: All Events<br />
+},<br />
+]<br />
 
-{
-Source Location: Location-2
-Destination Location: Location-0
-Transition: All Events
-},
-
-]
-
-
-Location-id: Location-3
-isAccepting: true
-Transitions: [
-{
-Source Location: Location-1
-Destination Location: Location-3
-Transition: ( hr = high , time >= 10 )
-},
-
-{
-Source Location: Location-3
-Destination Location: Location-1
-Transition: All Events
-},
-
-]
-
-
-Location-id: Location-4
-isAccepting: false
-Transitions: [
-{
-Source Location: Location-4
-Destination Location: Location-4
-Transition: All Events
-},
-
-{
-Source Location: Location-1
-Destination Location: Location-4
-Transition: !( hr = high , time >= 10 )
-},
-
-]
+<br />
+Location-id: Location-4<br />
+isAccepting: false<br />
+Transitions: [<br />
+{<br />
+Source Location: Location-4<br />
+Destination Location: Location-4<br />
+Transition: All Events<br />
+},<br />
+<br />
+{<br />
+Source Location: Location-1<br />
+Destination Location: Location-4<br />
+Transition: !( hr = high , time >= 10 )<br />
+},<br />
+]<br />
