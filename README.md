@@ -8,7 +8,7 @@ This Repository consists of source code for Android Interfaces and their corresp
 ## Folder Structure
 
 
-- `app/src/main/java/com/example/btp_app`: the folder that consists of source code for android interfaces and LL(1) parser.
+- `app/src/main/java/com/example/app`: the folder that consists of source code for android interfaces and LL(1) parser.
 - `taAlgo`:  this folder consists of source code for TA generation Algorithm
 - `app/src/main/res/raw`: this folder consists the proposed DSL in a text document  
 
