@@ -34,7 +34,6 @@ public class App {
         Stack<String> stack= new Stack<>();       
         stack.push("Location-"+counter);
         counter++;
-        
         ArrayList<String> accepting = new ArrayList<>(); 
         ArrayList<String> nonAccepting = new ArrayList<>(); 
         Stack<String> elseStack = new Stack<>();
@@ -211,7 +210,7 @@ public class App {
             
           for(String keyId: Nodes.keySet())
           {
-              System.out.println("\n");
+              //System.out.println("\n");
               printLocations(keyId);
               System.out.println("\n");
           }
@@ -228,8 +227,8 @@ public class App {
     }
 
     public static void printLocations(String id){
-        System.out.println("Location-id: "+id+"\nTransitions: [");
-
+        System.out.println("Location-id: "+id);
+        System.out.println("isAccepting: "+Nodes.get(id).getIsAccepting()+"\nTransitions: [");
         //if(Nodes.get(id).getTransitions())
         for(int i= 0;i<Nodes.get(id).getTransitions().size();i++)
         {
@@ -238,7 +237,6 @@ public class App {
             System.out.println("Source Location: "+Nodes.get(id).getTransitions().get(i).source.location+"");
             System.out.println("Destination Location: "+Nodes.get(id).getTransitions().get(i).destination.location+"");
             System.out.println("Transition: "+Nodes.get(id).getTransitions().get(i).transition+"");
-            System.out.println("isAccepting: "+Nodes.get(id).getIsAccepting());
             System.out.println("},\n");
         }
         System.out.println("]");
