@@ -1,1 +1,0 @@
-( HR , HIGH ) TIMEGAP > 5 ( BP , HIGH / LOW ) := UNSAFE
