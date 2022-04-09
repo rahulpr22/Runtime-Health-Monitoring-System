@@ -8,11 +8,6 @@ public class App {
     public static HashMap<String,String> stateMap = new HashMap<>();
     public static HashMap<String,State> Nodes = new HashMap<>();
 
-    public static void printStack(Stack<String> stack) {
-        String values = Arrays.toString(stack.toArray());
-        System.out.println(values);
-    }
-
     public static State makeNode(String location)
     {
         State ste= new State();
@@ -45,7 +40,7 @@ public class App {
         Stack<String> elseStack = new Stack<>();
         try  
         {  
-            File file=new File("../policy.txt");    
+            File file=new File("../policy1.txt");    
             FileReader fr=new FileReader(file);   
             BufferedReader br=new BufferedReader(fr);  
             String line;  
@@ -55,7 +50,11 @@ public class App {
                 if(line.toLowerCase().startsWith("if")) 
                 {
                     stack.push(line.toLowerCase());
-                    
+                    Transition t1= new Transition();
+                    t1.setDestination(start);
+                    t1.setSource(start);
+                    t1.setTransition("{All Events}/ ( "+ line.toLowerCase().replace("if (", "").split(",")[0]+" )");
+                    start.getTransitions().add(t1);
                     elseStack.push(line.toLowerCase().replace("if (", "else !("));
                     if(!stateMap.containsKey(line.toLowerCase()))
                     {
@@ -225,6 +224,11 @@ public class App {
         {  
             e.printStackTrace();  
         }  
+    }
+    
+    public static void printStack(Stack<String> stack) {
+        String values = Arrays.toString(stack.toArray());
+        System.out.println(values);
     }
 
     public static void printLocations(String id){
