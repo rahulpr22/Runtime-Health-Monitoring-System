@@ -13,4 +13,4 @@ This Repository consists of source code for Android Interfaces and their corresp
 - `app/src/main/res/raw`: this folder consists the proposed DSL in a text document  
 
 
-RV Monitor Module is implemented in python ( [can be found here] https://github.com/SrinivasPinisetty/PredictiveRE ) that uses UPPAAL Libraries to generate RV Monitors from policies expressed as TA.
+RV Monitor Module is implemented in python [can be found here] (https://github.com/SrinivasPinisetty/PredictiveRE ) that uses UPPAAL Libraries to generate RV Monitors from policies expressed as TA.
