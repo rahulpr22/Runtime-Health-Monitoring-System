@@ -1,5 +1,9 @@
 # Runtime-Health-Monitoring-System
 
+This project focuses on remote health monitoring of vital signs-related data using formal verification techniques. Below is the structural overview of the project.
+
+![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/temp/workflow.png)
+
 This Repository consists of source code for Android Interfaces and their corresponding backend logics, verifying a timed policy expressed using DSL and an algorithm to translate a given timed policy into its corresponding timed automata.
 
 - Verifying whether a policy is syntactically correct or not is done using a predictive top-down LL(1) parser.
