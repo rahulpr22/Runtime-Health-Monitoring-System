@@ -1,4 +1,4 @@
-package com.example.btp_app;
+package com.example.app;
 
 import java.util.LinkedList;
 import java.util.Queue;

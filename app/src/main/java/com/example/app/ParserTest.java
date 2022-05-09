@@ -1,1 +1,1 @@
-package com.example.btp_app;
+package com.example.app;

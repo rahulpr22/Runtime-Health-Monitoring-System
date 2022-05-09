@@ -1,4 +1,4 @@
-package com.example.btp_app;
+package com.example.app;
 
 import java.io.File;
 import java.io.FileNotFoundException;

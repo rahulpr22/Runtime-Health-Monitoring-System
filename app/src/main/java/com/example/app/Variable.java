@@ -1,5 +1,4 @@
-package com.example.btp_app;
-
+package com.example.app;
 /**
  * Variable represented by a String.
  */

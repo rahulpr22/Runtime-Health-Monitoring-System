@@ -1,5 +1,4 @@
-package com.example.btp_app;
-
+package com.example.app;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -114,7 +113,7 @@ public class monitorActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 check=true;
-                Intent i = new Intent(monitorActivity.this,Report.class);
+                Intent i = new Intent(monitorActivity.this,dashboard.class);
                 i.putExtra("map",propertyVerifier.getGaurd());
                 i.putExtra("email",email);
                 i.putExtra("output", (ArrayList<Result>) resultJson);

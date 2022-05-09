@@ -1,5 +1,4 @@
-package com.example.btp_app;
-
+package com.example.app;
 import android.content.Context;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;

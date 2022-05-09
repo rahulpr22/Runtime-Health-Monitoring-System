@@ -1,4 +1,4 @@
-package com.example.btp_app;
+package com.example.app;
 
 import android.content.Intent;
 import android.os.Bundle;

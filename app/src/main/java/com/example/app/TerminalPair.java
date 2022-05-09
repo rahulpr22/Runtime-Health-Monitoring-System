@@ -1,5 +1,4 @@
-package com.example.btp_app;
-import java.util.List;
+package com.example.app;import java.util.List;
 
 /**
  * A simple pairing of a Terminal and a List of RuleElements.

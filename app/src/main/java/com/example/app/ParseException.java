@@ -1,5 +1,4 @@
-package com.example.btp_app;
-
+package com.example.app;
 /**
  * Custom Exception for LL1 Parsing use only.
  */

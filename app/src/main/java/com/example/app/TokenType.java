@@ -1,5 +1,4 @@
-package com.example.btp_app;
-
+package com.example.app;
 /**
  * TokenType represented by with a String identifier and a RegEx that matches it.
  */

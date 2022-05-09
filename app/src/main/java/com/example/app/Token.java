@@ -1,5 +1,4 @@
-package com.example.btp_app;
-
+package com.example.app;
 /**
  * Token with a name and a TokenType.
  */

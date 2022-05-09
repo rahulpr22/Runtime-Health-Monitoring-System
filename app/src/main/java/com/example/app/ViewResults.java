@@ -1,5 +1,4 @@
-package com.example.btp_app;
-
+package com.example.app;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,13 +29,13 @@ public class ViewResults extends AppCompatActivity {
         title.setVisibility(View.VISIBLE);
         ListView listView = (ListView) findViewById(R.id.listView1);
         ArrayList<Results> results= new ArrayList<>();
-        results.add(new Results("13 November 2021 13:50"));
-        results.add(new Results("14 November 2021 23:15"));
-        results.add(new Results("16 November 2021 10:20"));
-        results.add(new Results("18 November 2021 15:30"));
-        results.add(new Results("10 December 2021 12:30"));
-        results.add(new Results("12 December 2021 18:45"));
-        results.add(new Results("15 December 2021 20:10"));
+        results.add(new Results("23 February 2022 13:50"));
+        results.add(new Results("23 February 2022 23:15"));
+        results.add(new Results("13 March 2022 10:20"));
+        results.add(new Results("14 March 2022 15:30"));
+        results.add(new Results("18 March 2022 12:30"));
+        results.add(new Results("12 April 2022 18:45"));
+//        results.add(new Results("14 February 2021 20:10"));
 
         ResultAdapter rs= new ResultAdapter(this,R.layout.listitem,results);
         listView.setAdapter(rs);

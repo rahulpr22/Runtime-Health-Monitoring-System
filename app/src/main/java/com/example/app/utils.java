@@ -1,4 +1,4 @@
-package com.example.btp_app;
+package com.example.app;
 
 import android.os.Environment;
 
