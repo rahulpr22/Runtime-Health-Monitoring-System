@@ -32,11 +32,11 @@ The Algorithm for constructing a TA for a given timed policy expressed using DSL
 
   ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/1.png)
  
-- When a line starting with *if statement* is encountered push that line into stack following line-1 of the algorithm
+- When a line starting with *if statement* is encountered push that line into stack following line-8 of the algorithm
 
   ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/2.png)
  
-- When a line starting with *if statement* is encountered push that line into stack following line-1 of the algorithm
+- When a line starting with *if statement* is encountered push that line into stack following line-8 of the algorithm
 
   ![alt text](https://github.com/rahulpr22/Runtime-Health-Monitoring-System/blob/master/taAlgo/images/3.png)
  
